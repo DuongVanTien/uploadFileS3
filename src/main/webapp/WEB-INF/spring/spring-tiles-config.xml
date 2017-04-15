@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/common/_template.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/common/_header.jsp"></put-attribute>
+		<put-attribute name="menu" value="/WEB-INF/views/common/_menu.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/common/_footer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Home"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
+	</definition>
+	<definition name="listCurrencies" extends="base.definition">
+		<put-attribute name="title" value="List Currency"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/show/list_currencies.jsp"></put-attribute>
+	</definition>
+	<definition name="createCurrency" extends="base.definition">
+		<put-attribute name="title" value="Add Currency"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/create/create_currency.jsp"></put-attribute>
+	</definition>
+	<definition name="updateCurrency" extends="base.definition">
+		<put-attribute name="title" value="Edit Currency"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/update/update_currency.jsp"></put-attribute>
+	</definition>
+	<definition name="showuser" extends="base.definition">
+		<put-attribute name="title" value="User Categories"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/show/show_user.jsp"></put-attribute>
+	</definition>
+
+	<definition name="createuser" extends="base.definition">
+		<put-attribute name="title" value="User Categories"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/create/create_user.jsp"></put-attribute>
+	</definition>
+
+	<definition name="updateuser" extends="base.definition">
+		<put-attribute name="title" value="User Categories"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/update/update_user.jsp"></put-attribute>
+	</definition>
+	<definition name="rateChart" extends="base.definition">
+		<put-attribute name="title" value="User Categories"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/show/rate_chart.jsp"></put-attribute>
+	</definition>
+
+</tiles-definitions>
